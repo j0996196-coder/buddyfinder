@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>ActivityHub — Offline</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#0d0d0d;color:#f0ede8;font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;}
+.icon{font-size:56px;margin-bottom:20px;}
+h1{font-family:'Syne',system-ui,sans-serif;font-size:22px;font-weight:700;margin-bottom:10px;}
+p{font-size:14px;color:#666;line-height:1.6;max-width:280px;margin:0 auto 28px;}
+button{background:#c8f55a;color:#0d0d0d;border:none;padding:13px 32px;border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;font-family:'Syne',system-ui,sans-serif;}
+button:hover{background:#b0d94a;}
+.dots{display:flex;justify-content:center;gap:6px;margin-top:24px;}
+.dot{width:6px;height:6px;background:#2a2a2a;border-radius:50%;}
+.dot.on{background:#c8f55a;}
+</style>
+</head>
+<body>
+<div>
+  <div class="icon">🏃</div>
+  <h1>You're offline</h1>
+  <p>ActivityHub needs a connection to find people nearby. Check your internet and try again.</p>
+  <button onclick="location.reload()">Try again</button>
+  <div class="dots">
+    <div class="dot on"></div><div class="dot"></div><div class="dot"></div>
+  </div>
+</div>
+</body>
+</html>
